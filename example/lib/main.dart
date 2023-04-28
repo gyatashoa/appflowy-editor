@@ -1,9 +1,8 @@
-import 'package:example/home_page.dart';
+import 'package:appflowy_editor/appflowy_editor.dart';
 import 'package:flutter/material.dart';
-
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'package:appflowy_editor/appflowy_editor.dart';
+import 'home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,6 +38,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const HomePage();
+    return const EditorExample();
   }
 }

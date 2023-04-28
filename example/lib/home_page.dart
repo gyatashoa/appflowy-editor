@@ -33,14 +33,14 @@ extension on ExportFileType {
   }
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class EditorExample extends StatefulWidget {
+  const EditorExample({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<EditorExample> createState() => _EditorExampleState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _EditorExampleState extends State<EditorExample> {
   final _scaffoldKey = GlobalKey<ScaffoldState>();
   late WidgetBuilder _widgetBuilder;
   late EditorState _editorState;
