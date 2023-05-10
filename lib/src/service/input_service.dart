@@ -1,13 +1,12 @@
-import 'package:appflowy_editor/src/infra/log.dart';
+import 'package:appflowy_editor/src/core/document/node.dart';
+import 'package:appflowy_editor/src/core/location/selection.dart';
 import 'package:appflowy_editor/src/core/transform/transaction.dart';
+import 'package:appflowy_editor/src/editor_state.dart';
+import 'package:appflowy_editor/src/extensions/node_extensions.dart';
+import 'package:appflowy_editor/src/infra/log.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'package:appflowy_editor/src/core/document/node.dart';
-import 'package:appflowy_editor/src/core/location/selection.dart';
-import 'package:appflowy_editor/src/editor_state.dart';
-import 'package:appflowy_editor/src/extensions/node_extensions.dart';
 
 /// [AppFlowyInputService] is responsible for processing text input,
 ///   including text insertion, deletion and replacement.
@@ -342,5 +341,10 @@ class _AppFlowyInputState extends State<AppFlowyInput>
   @override
   void performSelector(String selectorName) {
     // TODO: implement performSelector
+  }
+
+  @override
+  void insertContent(KeyboardInsertedContent content) {
+    // TODO: implement insertContent
   }
 }
